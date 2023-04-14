@@ -1,0 +1,380 @@
+:root{
+    --bg-color: rgb(53, 53, 53);
+    --main-text-color: rgb(221, 221, 221);
+    --additional-text-color: rgb(194, 194, 194);
+    --text-shadow-collor: rgb(43, 43, 43);
+    --main-color: orange;
+    --additional-color: rgb(190, 0, 190);
+}
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+p{
+    color: var(--main-text-color);
+}
+
+header{
+    margin: auto;
+    max-width: 1200px;
+    height: 60px;
+    background-color: rgba(146, 146, 146, 0.301);
+    border-radius: 0px 0px 5px 5px;
+}
+header img{
+    height: 60px;
+    margin: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header a{
+    padding: 3px;
+    color: var(--main-color);
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    font-size: 20px;
+}
+header .button:hover{
+    border-radius: 10px;
+    background-color: rgba(190, 0 ,190, 0.4);
+    box-shadow: 0 0 10px var(--additional-color);
+}
+header div{
+    display: flex;
+    flex-direction: row;
+}
+header .novigation{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto ;
+}
+header .menu{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto ;
+}
+
+.message{
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    max-width: fit-content;
+    color: var(--main-text-color);
+    font-size: larger;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.slider {
+    margin: auto;
+    max-width: fit-content;
+    position: relative;
+    text-align: left;
+}
+.slider a{
+    text-decoration: none;
+    font-size: larger;
+    color: var(--main-color);
+}
+.slider-item {
+    max-width: 100%;
+    text-align: center;
+}
+
+.slider-item img {
+    width: 800px;
+    max-width: 100%;
+}
+
+.slider button {
+    color: var(--main-color);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    font-size: x-large;
+    height: 10%;
+    top: 40%;
+
+}
+.slider button:hover {
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.slider-next {
+    right: 0;
+}
+.wii{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.wii h2{
+    font-size: x-large;
+    color: var(--main-text-color);
+}
+.wii img{
+    width: 50px;
+}
+.wii a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+main{
+    margin: auto;
+    margin-top: 60px;
+    max-width: 1200px;
+    padding: 5px;
+    min-height: 95vh;
+}
+.about-game{
+    font-size: large;
+    color: var(--additional-text-color);
+    margin: 10px;
+    text-shadow: 0 0 10px var(--main-color);
+}
+.about-game h3{
+    font-size: x-large;
+    color: var(--main-text-color);
+    text-shadow: 0 0 10px var(--additional-color);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: var(--text-shadow-collor);
+}
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto;
+    color: var(--main-color);
+}
+footer img{
+    max-height: 40px;
+}
+
+.about{
+    margin: auto;
+    text-align: center;
+}
+.about h1{
+    color: var(--main-text-color);
+    font-size: xx-large;
+    text-shadow: 0 0 15px var(--main-color);
+}
+.about p{
+    color: var(--additional-text-color);
+    font-size: larger;
+    text-shadow: 0 0 15px var(--additional-color);
+}
+
+.category-sort p{
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--main-color);
+    font-size: large;
+}
+.category-sort{
+    margin: auto;
+    /*margin-bottom: 10px;*/
+    display: flex;
+    flex-direction: column;
+}
+.category-sort button{
+    width: 100%;
+}
+.category-sort div{
+    display: none;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+
+}
+.category-sort:hover div{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+}
+
+.cotalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cotalog-item{
+    width: 30%;
+    min-width: 300px ;
+    margin: auto;
+    height: max-content;
+}
+.cotalog-item img{
+    max-width: 100%;
+    border-radius:5px;
+}
+.cotalog-item a{
+    font-size: large;
+    text-decoration: none;
+    color: var(--main-color);
+    margin-top: auto;
+}
+
+.item video{
+    width: 100%;
+}
+.item h1{
+    color: var(--main-text-color);
+    font-size: x-large;
+}
+.item p{
+    color: var(--additional-text-color);
+    font-size: large;
+}
+.admin{
+    display: flex;
+    flex-direction: row;
+}
+.admin a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: large;
+    margin-right: 10px;
+}
+
+.admin-menu{
+    display: flex;
+    flex-direction: row;
+}
+.admin-menu select{
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: large;
+    margin: auto;
+    margin-bottom: 10px;
+    height: fit-content;
+}
+
+.admin-menu select option{
+    color: black;
+}
+.admin-menu button{
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: large;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.add_video form{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.categories div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.categories form{
+    min-width: 500px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.add_video{
+    display: none;
+}
+.add_video p .categories p{
+    margin: auto;
+    font-size: large;
+}
+.add_video h2, .categories h2{
+    margin: auto;
+    font-size: x-large;
+    text-align: center;
+    color: var(--main-text-color);
+    margin-top: 20px;
+}
+input, select, option{
+    margin-top: 10px;
+    height: 20px;
+    background-color: var(--additional-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+.users{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.user-info{
+    margin: auto;
+    width: fit-content;
+    max-width: 30%;
+    min-width: 300px;
+}
+.user-info button{
+    margin-top: 10px;
+    height: 20px;
+    background-color: var(--additional-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100%;
+}
+
+.register{
+    margin: auto;
+}
+.register p{
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.register form{
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 4px var(--additional-color);
+}
+.register form input{
+    margin-top: 10px;
+    height: 20px;
+    background-color: var(--additional-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+.register form input[type="button"]{
+    border: solid 3px var(--main-color);
+    height: 25px;
+}
+.register form div{
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+    vertical-align: auto;
+}
